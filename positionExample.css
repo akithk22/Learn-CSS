@@ -1,0 +1,58 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 1.5rem;
+}
+section{
+    height: 100vw;
+}
+.blue{
+    background-color: blue;
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}
+header, footer{
+    color: whitesmoke;
+    
+    text-align: center;
+    height: 100px;
+    padding: 1rem;
+}
+header{
+    position: sticky;
+    top: 0;
+    font-size: 4rem;
+}
+footer{
+    position: sticky; /* or width: 100%; to make the footer in full width */
+    bottom: 0;
+    font-size: 2rem;
+    background-color: black;
+    
+}
+a{
+    color: azure;
+}
+.dhuddu{
+    background-color: aquamarine;
+    font-size: inherit;
+    color: blue;
+    position: fixed;
+    top: 30%;
+    left: 0;
+    z-index: 1;
+}
+.dhuddu1{
+    background-color: aquamarine;
+    font-size: inherit;
+    color: blue;
+    position: fixed;
+    top: 37%;
+    left: 0;
+    z-index: 1;
+}

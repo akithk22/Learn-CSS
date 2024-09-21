@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 1.5rem;
+    min-height: 200vh;
+}
+.outer-container{
+    border: 3px dashed black;
+    width: 75vw;
+    height: 85vw;
+    margin: 40px auto;
+    position: relative; /* I am telling the absolutive div to take the outer-container as the relative cordinate system. otherwise absolute takes the origin o the web browser as the cordinate system. */
+}
+.inner-container{
+    border: 2px solid blue;
+    width: 40vw;
+    height: 50vh;
+    margin: 200px auto;
+    position: relative;
+}
+.box{
+    width: 150px;
+    height: 150px;
+    color: white;
+    padding: 1rem;
+}
+.absolute{
+    background-color: blue;
+    /* I am telling the absolute div to move to (0,0) with the relative (Normally the relative is the web browser, but we can tell which should be the relative by position:relative;) */
+    position: absolute; 
+    top: 0;
+    left: 0; /* left: -10000px; to hide an element. */
+    /* z-index: 1; */
+}
+/* If I set the .outer-container and .inner-container as position:relative; then the first preference is given to the .inner-container. because it's the immidiate parent. */
+
+.relative{
+    background-color: red;
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+/* eventhoght we scroll the page the fixed part doesn't move. */
+.fixed{
+    background-color: green;
+    position: fixed;
+    top: 100px;
+    left: 200px;
+}
+/* If we set top: 0px or 100px; to sticky, when we scroll the page, the sticky moves and when the sticky element reaches to the top 0 or from top 100px, then it struct(or fixed) ath the position until the immidiate parent dissappear from the page or bottom of the parent element go above the bottom of the sticky element. then both will be move together. */
+.sticky{
+    background-color: black;
+    position: sticky;
+    top: 0px;
+}
