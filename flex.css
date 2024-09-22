@@ -1,0 +1,62 @@
+/*Use the website and solve the problems to fully understand the flexbox concepts*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    padding: 20px;
+}
+.container{
+    max-width: 880px;
+    min-height: 400px;
+    margin-inline: auto;
+    border: 2px solid red;
+
+    /*------------------------flex elements----------------------------------------*/
+
+    display: flex; /* all the vertical divs changed to horizontal divs */
+
+    /*gap: 1rem; To get gaps between every div elements. no need to use the gap.*/
+    gap: 1rem;
+
+    justify-content: center; /*flex-start-->default, flex-end,space-around, space-between, space-evenly is a good practice*/
+
+     /*-----------------------------------------------------------------------------*/
+    align-items: center;
+
+    flex-direction: row; /*Does the flex change the vertical content tonhorizontal every time. Answer is No. The default valiue for flex-direction is rows. if i chnage that to columns then it will be vertical.*/
+
+    flex-wrap: nowrap;
+
+    /* flex-flow: row wrap;  this is the short form of the above two declarations.*/
+
+    align-content: space-evenly; /*To get the spaces and alignments between the div elements*/
+    
+
+    
+}
+.box{
+    /* min-width: 100px; */
+    height: 100px;   /*in the start I set min-height: 100px;*/
+    background-color: black;
+    color: aliceblue;
+    font-size: 2rem;
+    padding: 0.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-basis: 100px; /*It tells that set every individual items that min-width 100px. It operates like the min-wdth:100px;*/ 
+    flex-grow: 1; /*we can use flex-strink: 1; to shrink when the display size is changed.*/
+
+    flex: 1 1 200px; /*grow,strink,basis. short form of the above 3.*/
+    
+}
+/*To conrol individual items we use pseduo  code*/
+.box:nth-child(2){
+    /* flex-grow: 2; */
+    flex: 2 2 200px ; /*when display size is increased grow more and when display size is reduced shrink more.*/
+}
