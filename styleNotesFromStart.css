@@ -1,0 +1,173 @@
+/*There are four different types of selectors 
+1.Element selector
+eg: body, p 
+2. Class selector
+3. Id selector
+4.Universal selector
+we normally don't use this selector.
+eg: * { font-family: monospace;}
+*/
+/*body > element > class > id (avoid using the id in your style)*/
+/*website--> specificitycalculator*/
+
+/* 
+*{
+    color: red;
+}
+body {
+    color: aqua;
+    font-size: 30px;
+}
+p {
+    color: blue;
+}
+h1, h2 {
+    color: green;
+}
+.gray {
+    color: brown;
+    font-style: italic;
+}
+#secondparagraph {
+    color: rgb(255, 55, 0);
+}
+p span {
+    color: blueviolet;
+}
+.highlight {
+    color: red;
+}
+button, input, textarea {
+    font: inherit;
+} */
+ /*-----------------section 03--------------------------*/
+
+ /* body {
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+    color: rgb(115, 0, 255);
+ }
+ p {
+    /* color: rgba(5, 5, 11, 1); */ /*a-alpha(changing the transparancy)-->1:full brightness, 0: no brightness(we can't see the color or text)*/
+    /* color: #350101; */
+    /*color: hsl(0, 79%, 46%);
+    hsl will be very handy so we will use it in future. 
+    hue is to select color, saturation and lightness to set transparancy. when saturation and lifgtness are high the the color visible well.} */
+ 
+ /* website: coolers.co --> tools --> color contrast checker to select the background and text colors.
+ */
+/*-----------------section 04--------------------------*/
+ /* header {
+    width: 50%;
+ }
+ h1 {
+    border: 2px dashed red;
+    width: 50%;
+    font-size : 2rem; =16*2=32
+    padding: 2em; =32*2=64
+ } */
+ /* rem takes the length of the root element and then multiple to get the rem value.
+ em takes the length of the paren element and then multiple to get the em value.
+ main is not the root for p but main is the parent of p.
+ mostly avoid using em.but it can be used to scale padding. */
+ /* main {
+    font-size: 1rem;
+ }
+ p{
+    font-size: 2rem; /*that means 16*2=32px 
+    width: 40ch; /*40 charectors per line
+ } */
+
+ /* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*or content box. you can see the difference in the inspection and computed section
+ } */
+/*-----------------section 05--------------------------*/
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    border: 2px dashed green;
+    font-size: 1.5rem;
+    margin: 0.5em;
+    margin-top: 1em;
+    padding: 0.5em;
+}
+.circle{
+    margin: 2em auto;
+    border: 10px solid green;
+    border-radius: 50%;
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    outline: 5px dashed black;
+    outline-offset: 10px;
+} */
+/*-----------------section 06--------------------------*/
+/* body{
+    padding: 10%;
+    font-size: 1.5rem;
+}
+p{
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: justify;
+    
+    line-height: 1.4;
+    /*text-indent: 2em; 
+    letter-spacing: 0.1em;
+    word-spacing: 0.5em;
+    font-style: italic; 
+    font-weight: 400;
+    
+    
+} */
+/*web search as fonts.google.com*/
+
+/*-----------------section 07--------------------------*/
+/* a{
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(163, 165, 42);
+}
+a:visited{
+    color: purple;
+}
+
+a:hover{
+    color: blue;
+}
+a:active{
+    color: green;
+}
+a:focus{
+    background-color: yellow;
+} */
+ /*------section 08-List style--------------------------*/
+ /* ol{
+    list-style-type: upper-roman;
+ }
+ ul{
+list-style-type: square;
+text-align: center;
+list-style-position: inside; /*The squres move with the text
+list-style-image: url(../image/ckeckmark.png);
+color: blue;
+list-style: square url(../image/ckeckmark.png) inside ;
+ }
+ ul li:nth-child(2){
+    color: brown;
+ } */
+  /*pseduo elements ::*/
+ /* ul::marker{
+    color: blue;
+    font: 2em;
+    content: "Subscribe>>";
+  } */
+   /*------section 09-display--------------------------*/
+ 
