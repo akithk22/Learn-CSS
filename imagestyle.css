@@ -1,0 +1,100 @@
+/*Begin reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+}
+/* img{
+    display: block; 
+}*/
+/*End reset*/
+
+/*Begin utility classes*/
+/* .nowrap{
+    white-space: nowrap;
+}
+.offscreen{
+    position: absolute;
+    left: -10000px;
+} */
+/* body{
+    background-color: aliceblue;
+    background-image: url(images/cssicon.png), linear-gradient(to right, rgb(13, 145, 210), white);
+    /* background-image: linear-gradient(to left,steelblue, white); 
+     
+    
+    background-repeat: repeat-y;
+    background-position: right;
+    background-size: 20%;
+}  */
+
+/*End utility classes*/
+
+.clip{
+    font-weight: 800;
+    font-size: 10rem;
+    text-align: center;
+    background-image: url(images/image1forimagestylechapter.webp);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    color: hsla(0, 0%, 0%, 0.065);
+}
+
+/*
+.container{
+    background-color: grey;
+    background-image: url('images/raining.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.hero{
+    border-bottom: 2px solid black;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+
+    background-color: hsla(240, 100%, 50%, 0.152);
+    
+
+}
+ .h1{
+    font-size: 400%;
+    text-shadow: 2px 2px 5px red; /*x-axis y-axis, blur
+   
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.profile-pic{
+    width: 35%;
+}
+.profile-pic img{
+    width: 100%; /*with respect to 35%
+    height: auto;
+    min-height: 100px;
+    border: 2px double black;
+    border-radius: 50%;
+
+} */
+
+/* Styles for the 1st bottom comment in the html file*/
+/*.example{
+    margin-top: 1rem;
+    padding-left: 20px;
+    border: 1px solid red;
+}
+.example img{
+     If I set width, then I must set height: auto; and I set width and height in the img tag also. 
+    width: 25%;
+    height: auto; 
+    
+    
+}*/
