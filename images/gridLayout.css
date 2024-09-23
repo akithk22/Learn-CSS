@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+
+}
+.box{
+    background-color: black;
+    color: aliceblue;
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+.container{
+    display: grid; /*all the elements were chnaged as grid elements.*/
+    /* grid-auto-flow: column; it will make some troubles when we style individual divs or columns. */
+    grid-template-columns: 200px 100px 50px 20px 10px 100px; /* controlling every column's width. */
+}
